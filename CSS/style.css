@@ -63,3 +63,25 @@ body {
 div {
     border: 1px solid Chocolate;
 }
+
+.masthead{
+    background: white;  
+    height: 5em;
+}
+
+.masthead ul{
+    list-style-type: none;
+    background:white;
+    float: right;
+    margin: 1.7em 10em;
+}
+
+.masthead ul li{
+    display: inline;
+    margin: 1em;
+}
+
+.logo{
+    float: left;
+    margin: 1em 20em;
+}

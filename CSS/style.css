@@ -1,17 +1,14 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Feb 8, 2015, 3:35:24 PM
-    Author     : toddschmidt
-*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,63 +22,58 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+/* End of Reset */
+/* Start of Custom Styles */
+.content {
+    padding: 0 15px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.top-navigation > .content {
+    margin: 0 auto;
+    width: 970px;
+    height: 70px;
 }
-
-/*Gray background to distinguish divs, should be removed before final version*/
-body {
-    background-color: LightGray;
+.top-navigation .logo {
+    height: 70px;
 }
-div {
-    border: 1px solid Chocolate;
-}
-
-.masthead{
-    background: white;  
-    height: 5em;
-}
-
-.masthead ul{
-    list-style-type: none;
-    background:white;
+.top-navigation .links {
     float: right;
-    margin: 1.7em 10em;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
 }
-
-.masthead ul li{
-    display: inline;
-    margin: 1em;
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
 }
-
-.logo{
-    float: left;
-    margin: 1em 20em;
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }

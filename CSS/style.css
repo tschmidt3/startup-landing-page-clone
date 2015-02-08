@@ -55,3 +55,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*Gray background to distinguish divs, should be removed before final version*/
+body {
+    background-color: LightGray;
+}
+div {
+    border: 1px solid Chocolate;
+}

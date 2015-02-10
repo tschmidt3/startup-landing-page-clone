@@ -77,3 +77,18 @@ ol, ul {
     cursor: pointer;
     color: #333333;
 }
+
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 46rem;
+}
+
+.introduction h1{
+    font-size: 3.125rem;
+    color: white;
+    text-align:center;
+}
+

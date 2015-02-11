@@ -42,6 +42,13 @@ ol, ul {
 }
 /* End of Reset */
 /* Start of Custom Styles */
+
+body {
+    /*background-color: LightGray;*/
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 .content {
     padding: 0 15px;
 }
@@ -82,13 +89,42 @@ ol, ul {
     background-image: url('../images/first-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: 0 bottom;
     height: 46rem;
+    overflow: auto;
 }
 
 .introduction h1{
+    margin-top: 15rem;
     font-size: 3.125rem;
     color: white;
     text-align:center;
+    font-weight: lighter;
+}
+
+.introduction h3{
+    color: white;
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+    font-weight: lighter;
+}
+
+.introduction .buttons{
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+
+button{
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
 }
 

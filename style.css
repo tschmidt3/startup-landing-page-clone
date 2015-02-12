@@ -89,7 +89,7 @@ body {
 }
 
 .introduction {
-    background-image: url('images/first-background.jpg');
+    background-image: url('/images/first-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 bottom;
